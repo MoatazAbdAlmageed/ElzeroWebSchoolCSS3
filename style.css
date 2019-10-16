@@ -15,6 +15,10 @@ body{
     color: #333333;
     padding: 30px;
     height: 300px;
+    transition:all 0.5s ease 0s;
+}
+.box:hover{
+    background: cyan;
 }
 
 .col{

@@ -7,6 +7,7 @@ Learn CSS3
 - https://caniuse.com/
 - https://border-radius.com/
 - https://www.cssmatic.com/box-shadow
+- https://css3generator.com/
 
 Make sure you are covering
 - WebKit
