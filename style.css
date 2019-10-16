@@ -3,3 +3,10 @@ body{
     color: #ffffff;
     text-align: center;
 }
+.box{
+    background: red;
+    width: 300px;
+    height: 300px;
+    margin:  auto;
+border-radius: 80px 0 80px 80px ;
+}
