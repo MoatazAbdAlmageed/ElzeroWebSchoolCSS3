@@ -44,3 +44,7 @@ box-shadow:
     14px 10px 5px 0px darkred,
     16px 10px 10px 0px darkcyan;
 }
+h2{
+    font-size: 30px;
+    text-shadow: 2px -1px 1px rgb(49, 143, 165)
+}

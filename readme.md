@@ -8,6 +8,7 @@ Learn CSS3
 - https://border-radius.com/
 - https://www.cssmatic.com/box-shadow
 - https://css3generator.com/
+- https://html-css-js.com/css/generator/text-shadow/
 
 Make sure you are covering
 - WebKit
