@@ -1,4 +1,4 @@
-$color_1: #f1d6ab;
+$color_1: #f8f8f8;
 $color_2: #e3b04b;
 $color_3: #2b2b28;
 
@@ -23,11 +23,12 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     &:hover {
-        color: $color_1;
+        color: $color_3;
         background: $color_2;
         overflow: visible;
         white-space: initial;
         cursor: crosshair;
+        word-wrap: break-word; /* use this to break words like urls vs white-space normal (should have space) */
     }
 }
 .col {
@@ -45,7 +46,7 @@ body {
     box-shadow: 10px 10px 5px 0px #000000;
 }
 .shadow2 {
-    box-shadow: 10px 10px 5px 0px #000000, 12px 10px 10px 0px darkgreen, 14px 10px 5px 0px darkred, 16px 10px 10px 0px darkcyan;
+    box-shadow: 10px 10px 5px 0px #000000, 12px 10px 10px 0px $color_2, 14px 10px 5px 0px $color_3, 16px 10px 10px 0px $color_1;
 }
 h2 {
     font-size: 30px;
