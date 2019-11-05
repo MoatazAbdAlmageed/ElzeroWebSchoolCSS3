@@ -1,0 +1,54 @@
+$color_1: #ffffff;
+$color_2: #333333;
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #333333;
+    color: $color_1;
+    text-align: center;
+}
+.container {
+    width: 100%;
+}
+.box {
+    background: #eeeeee;
+    color: $color_2;
+    padding: 30px;
+    height: 300px;
+    transition: all 0.5s ease 0s;
+    &:hover {
+        background: cyan;
+    }
+}
+.col {
+    width: 30%;
+    float: left;
+    margin: 0 20px;
+}
+.radius1 {
+    border-radius: 80px 0 80px 80px;
+}
+.radius2 {
+    border-radius: 80px 0 80px 0;
+}
+.shadow1 {
+    box-shadow: 10px 10px 5px 0px #000000;
+}
+.shadow2 {
+    box-shadow: 10px 10px 5px 0px #000000, 12px 10px 10px 0px darkgreen, 14px 10px 5px 0px darkred, 16px 10px 10px 0px darkcyan;
+}
+h2 {
+    font-size: 30px;
+    text-shadow: 2px -1px 1px rgb(49, 143, 165);
+}
+.desc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover {
+        overflow: visible;
+        white-space: initial;
+    }
+}

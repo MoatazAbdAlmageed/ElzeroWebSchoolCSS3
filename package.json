@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/lite-server"
+    "livereload": "./node_modules/.bin/lite-server",
+    "sass": "./node_modules/.bin/sass",
+    "dev:watch": "concurrently  \" npm run sass --watch  style.scss:style.css  \" \" npm run livereload  \" "
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   "homepage": "https://github.com/MoatazAbdAlmageed/ElzeroWebSchoolCSS3#readme",
   "keywords": [],
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "concurrently": "^5.0.0",
+    "lite-server": "^2.5.4",
+    "sass": "^1.23.3"
   }
 }

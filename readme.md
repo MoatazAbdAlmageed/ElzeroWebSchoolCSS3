@@ -3,7 +3,8 @@
 Learn CSS3
 # Installation
 ` npm install`
-` npm run dev`
+
+` npm run dev:watch`
 
 #### sites you can use
 - https://caniuse.com/
