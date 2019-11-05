@@ -1,11 +1,12 @@
-$color_1: #ffffff;
-$color_2: #333333;
+$color_1: #f1d6ab;
+$color_2: #e3b04b;
+$color_3: #2b2b28;
 
 * {
     box-sizing: border-box;
 }
 body {
-    background: #333333;
+    background: $color_3;
     color: $color_1;
     text-align: center;
 }
@@ -13,13 +14,20 @@ body {
     width: 100%;
 }
 .box {
-    background: #eeeeee;
-    color: $color_2;
+    background: $color_1;
+    color: $color_3;
     padding: 30px;
     height: 300px;
     transition: all 0.5s ease 0s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     &:hover {
-        background: cyan;
+        color: $color_1;
+        background: $color_2;
+        overflow: visible;
+        white-space: initial;
+        cursor: crosshair;
     }
 }
 .col {
@@ -41,14 +49,5 @@ body {
 }
 h2 {
     font-size: 30px;
-    text-shadow: 2px -1px 1px rgb(49, 143, 165);
-}
-.desc {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    &:hover {
-        overflow: visible;
-        white-space: initial;
-    }
+    text-shadow: 2px -1px 1px $color_3;
 }
