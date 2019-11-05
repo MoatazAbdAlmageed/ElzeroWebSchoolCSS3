@@ -1,0 +1,24 @@
+{
+  "name": "elzerowebschoolcss3",
+  "version": "1.0.0",
+  "description": "Learn CSS3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoatazAbdAlmageed/ElzeroWebSchoolCSS3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoatazAbdAlmageed/ElzeroWebSchoolCSS3/issues"
+  },
+  "homepage": "https://github.com/MoatazAbdAlmageed/ElzeroWebSchoolCSS3#readme",
+  "keywords": [],
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

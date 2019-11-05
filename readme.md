@@ -1,7 +1,9 @@
 ### CSS3 with Elzero Web School
 
 Learn CSS3
-
+# Installation
+` npm install`
+` npm run dev`
 
 #### sites you can use
 - https://caniuse.com/
