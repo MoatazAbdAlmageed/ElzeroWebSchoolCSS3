@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "livereload": "./node_modules/.bin/lite-server",
     "sass": "./node_modules/.bin/sass",
-    "dev:watch": "concurrently  \" npm run sass --watch  style.scss:style.css  \" \" npm run livereload  \" "
+    "dev:watch": "concurrently  \"  sass --watch sass:css --style compressed \" \" npm run livereload  \" "
   },
   "repository": {
     "type": "git",
