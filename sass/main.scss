@@ -14,16 +14,16 @@
 
 
 body {
-  background: $color_3;
-  color: $color_1;
+  background: darken($light,80);
+  color: $light;
   text-align: center;
 }
 .container {
   width: 100%;
 }
 .box {
-  background: $color_1;
-  color: $color_3;
+  background: $light;
+  color: darken($light,80);
   padding: 30px;
   height: 300px;
   transition: all 0.5s ease 0s;
@@ -31,8 +31,8 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   &:hover {
-    color: $color_3;
-    background: $color_2;
+    color: darken($light,80);
+    background: $dark;
     overflow: visible;
     white-space: initial;
     cursor: crosshair;
@@ -54,9 +54,9 @@ body {
   box-shadow: 10px 10px 5px 0px #000000;
 }
 .shadow2 {
-  box-shadow: 10px 10px 5px 0px #000000, 12px 10px 10px 0px $color_2, 14px 10px 5px 0px $color_3, 16px 10px 10px 0px $color_1;
+  box-shadow: 10px 10px 5px 0px #000000, 12px 10px 10px 0px $dark, 14px 10px 5px 0px darken($light,80), 16px 10px 10px 0px $light;
 }
 h2 {
   font-size: 30px;
-  text-shadow: 2px -1px 1px $color_3;
+  text-shadow: 2px -1px 1px darken($light,80);
 }
