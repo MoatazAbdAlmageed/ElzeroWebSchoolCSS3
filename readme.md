@@ -17,3 +17,9 @@ Make sure you are covering
 - WebKit
 - Gecko https://developer.mozilla.org/en-US/docs/Mozilla/Gecko
 - CSS3 
+
+
+## Thanks
+https://elzero.org/
+
+https://www.taniarascia.com/
