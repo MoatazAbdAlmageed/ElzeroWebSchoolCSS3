@@ -2,7 +2,7 @@
   width: 100%;
 }
 .box {
-  background: $light;
+  background: $dark;
   color: darken($light,80);
   padding: 30px;
   height: 300px;
@@ -10,14 +10,20 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 40px 0;
   &:hover {
     color: darken($light,80);
-    background: $dark;
+    background: darken($dark,20);
     overflow: visible;
     white-space: initial;
     cursor: crosshair;
     word-wrap: break-word; /* use this to break words like urls vs white-space normal (should have space) */
   }
+}
+.row{
+  width: 100%;
+  margin: 10px 0;
+  clear: both;
 }
 .col {
   width: 30%;

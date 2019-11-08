@@ -22,7 +22,9 @@
   "keywords": [],
   "devDependencies": {
     "concurrently": "^5.0.0",
+    "html5shiv": "^3.7.3",
     "lite-server": "^2.5.4",
+    "reset-css": "^5.0.1",
     "sass": "^1.23.3"
   }
 }

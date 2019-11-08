@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS3</title>
+    <title>HTML5 & CSS3</title>
+    <!--[if lt IE 9]>
+    <script src="node_modules/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -14,7 +17,7 @@
     <section class="navigation">
         <div class="nav-container">
             <div class="brand">
-                <a href="#!">MoatazWorld</a>
+                <a href="#"><h4>MoatazWorld</h4></a>
             </div>
             <nav>
                 <div class="nav-mobile">
@@ -52,33 +55,131 @@
         </div>
     </section>
 </header>
-    <h1>CSS3</h1>
-    <p>Learn by doing</p>
-    <div class="container">
-        <div class="col">
-            <div class="box radius1 shadow">
-                <h2>BOX 1</h2>
-            <p>https://www.google.com/search?q=sass+with+lite+server&oq=sass+with+lite+server&aqs=chrome..69i57.4004j0j7&sourceid=chrome&ie=UTF-8</p>
-            </div>
-        </div>
-        <div class="col">
-            <div class="box radius2 shadow">
-                <h2>BOX 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, architecto? Debitis quod quibusdam
-                    iusto eveniet rerum eos voluptas quo assumenda earum praesentium consequatur ipsam, nobis culpa!
-                    Repellendus ducimus facilis ratione.</p>
-            </div>
-        </div>
-        <div class="col">
-            <div class="box radius1 shadow">
-                <h2>BOX 3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, architecto? Debitis quod quibusdam
-                    iusto eveniet rerum eos voluptas quo assumenda earum praesentium consequatur ipsam, nobis culpa!
-                    Repellendus ducimus facilis ratione.</p>
-            </div>
-        </div>
+<main>
+    <div class="row">
+        <h1>HTML5 & CSS3</h1>
+        <p>Learn by doing</p>
     </div>
-</body>
+
+    <section class="post">
+
+        <div class="row">
+            <h2>CSS3</h2>
+            <div class="col">
+                <div class="box radius1 shadow">
+                    <h2>BOX 1</h2>
+                    <p>
+                        https://www.google.com/search?q=sass+with+lite+server&oq=sass+with+lite+server&aqs=chrome..69i57.4004j0j7&sourceid=chrome&ie=UTF-8</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box radius2 shadow">
+                    <h2>BOX 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, architecto? Debitis quod quibusdam
+                        iusto eveniet rerum eos voluptas quo assumenda earum praesentium consequatur ipsam, nobis culpa!
+                        Repellendus ducimus facilis ratione.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box radius1 shadow">
+                    <h2>BOX 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, architecto? Debitis quod quibusdam
+                        iusto eveniet rerum eos voluptas quo assumenda earum praesentium consequatur ipsam, nobis culpa!
+                        Repellendus ducimus facilis ratione.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Table</h2>
+            <table style="width:100%">
+                <colgroup>
+                    <col span="2"  class="primary">
+                    <col class="actions">
+                </colgroup>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Skills</th>
+                    <th>%</th>
+                </tr>
+                <tr>
+                    <td rowspan="4">Moataz</td>
+                    <td>Skill</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Skill</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Skill</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Skill</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row">
+            <h2>Entities</h2>
+            1000 &pound;
+            1000 &yen;
+            1000 &euro;
+        </div>
+
+        <div class="row left">
+            <h2>HTML5</h2>
+            <h3>Deprecated tags <a href="https://www.tutorialspoint.com/html5/html5_deprecated_tags.htm">HTML5 - Deprecated Tags & Attributes</a></h3>
+            <ol id="deprecated">
+                <li>center</li>
+                <li>big</li>
+                <li>acronym</li>
+                <li>applet</li>
+                <li>dir</li>
+                <li>font</li>
+            </ol>
+            <p>Using <a href="https://www.npmjs.com/package/html5shiv">html5shiv</a></p>
+
+            <article>
+                <header>
+                    <h2>This is header</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita impedit minima quae? Atque dolor eum iure maiores nulla suscipit vero voluptatem voluptatum. Adipisci, aut dolore necessitatibus obcaecati provident tempora voluptas!</p>
+            </article>
+        </div>
+    </section>
+    <aside>
+        <p>I'm side bar</p>
+        <section class="card links">
+            <h3>Links</h3>
+            <ul class="left">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </section>
+
+        <section class="card top-posts">
+            <h3>Top Posts</h3>
+            <ul class="left">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </section>
+    </aside>
+    <div class="clearfix"></div>
+</main>
+
+<footer>
+    <p>copyright 2019 &copy;</p>
+</footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="js/main.js"></script>
+</body>
 </html>

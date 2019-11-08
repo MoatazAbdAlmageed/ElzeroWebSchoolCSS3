@@ -1,7 +1,9 @@
+ // Reset
+@import 'base/reset';
+@import '../node_modules/reset-css/sass/reset';
 // Base
 @import 'base/variables';
 @import 'base/mixins';
-@import 'base/reset';
 // Components
 @import 'components/typography';
 @import 'components/grid';
@@ -12,12 +14,15 @@
 
 
 body {
-  background: darken($light, 80);
-  color: $light;
-  text-align: center;
   font-family: 'McLaren', cursive;
+  text-align: center;
 }
-
+main{
+  padding: 20px;
+  *{
+    padding: 5px;
+  }
+}
 .radius1 {
   border-radius: 80px 0 80px 80px;
 }
@@ -35,7 +40,54 @@ body {
 
 }
 
-h2 {
-  font-size: 30px;
-  text-shadow: 2px -1px 1px darken($light, 80);
+
+table, th, td {
+  border: 1px solid lighten(#2c2c2c,40);
+  border-collapse: collapse;
+  th{
+    background: darken($dark,20);
+  }
 }
+
+colgroup {
+  display: table-column-group;
+  .primary{
+    background: $dark;
+  }
+  .actions{
+    background: darken($dark,20);
+    color: $light;
+  }
+}
+.brand *{
+  padding: 0;
+  margin: 0;
+}
+
+article{
+  border: 1px solid $dark;
+  padding: 20px;
+}
+
+#deprecated li {
+  text-decoration:line-through;
+}
+
+.post{
+  width: 80%;
+  float: left;
+}
+aside{
+  width: 20%;
+  float: right;
+}
+.clearfix{
+  clear: both;
+}
+
+ .card {
+   margin: 15px 0;
+   width: 266px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   text-align: center;
+ }
