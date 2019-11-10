@@ -297,13 +297,38 @@
         <p id="demo"></p>
 
         <h2>&ltaudio&gt</h2>
-        <audio id="myAudio" controls>
+        <audio id="myAudio" controls preload="none">
             <source src="https://www.w3schools.com/jsref/horse.ogg" type="audio/ogg">
             <source src="https://www.w3schools.com/jsref/horse.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
 
 
+        <h2>&ltvideo&gt</h2>
+        <video id="myVideo" width="320" height="240" controls preload="none">
+            <source src="https://www.w3schools.com/jsref/movie.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/jsref/movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1>&ltform&gt</h1>
+        <form>
+            <h2>&ltinput type="color"&gt</h2>
+            <input type="color" name="color" value="#ff0000">
+            <h2>&ltinput type="range"&gt</h2>
+            <input type="range" name="rage">
+            <h2>&ltinput type="number"&gt</h2>
+            <input type="number" name="number">
+            <h2>&ltinput type="email"&gt</h2>
+            <input type="email" name="email">
+            <h2>&ltinput type="search"&gt</h2>
+            <input type="search" name="search">
+            <h2>&ltinput type="url"&gt</h2>
+            <input type="url" name="url">
+            <h2>&ltinput type="tel"&gt</h2>
+            <input type="tel" name="tel">
+            <input type="submit">
+        </form>
     </section>
     <aside>
         <p>I'm side bar</p>

@@ -106,3 +106,11 @@ aside{
    background: darken($dark,50);
    color: $dark;
  }
+
+ footer{
+   background: darken($dark,60);
+   p{
+     padding: 20px;
+     color: $dark;
+   }
+ }

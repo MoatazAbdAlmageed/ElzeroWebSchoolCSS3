@@ -634,4 +634,12 @@ img {
   color: #e3b04b;
 }
 
+footer {
+  background: black;
+}
+footer p {
+  padding: 20px;
+  color: #e3b04b;
+}
+
 /*# sourceMappingURL=main.css.map */
