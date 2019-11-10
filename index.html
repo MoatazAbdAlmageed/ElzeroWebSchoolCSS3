@@ -260,13 +260,22 @@
             </p>
             <h2>&ltdialog&gt</h2>
             <dialog open>This is an open dialog window</dialog>
-            
+
             <h2>&ltbdi&gt</h2>
             <p class="description">Isolate the usernames from the surrounding text-direction settings:</p>
             <ul>
-                <li>User <bdi>hrefs</bdi>: 60 points</li>
-                <li>User <bdi>jdoe</bdi>: 80 points</li>
-                <li>User <bdi>إيان</bdi>: 90 points</li>
+                <li>User
+                    <bdi>hrefs</bdi>
+                    : 60 points
+                </li>
+                <li>User
+                    <bdi>jdoe</bdi>
+                    : 80 points
+                </li>
+                <li>User
+                    <bdi>إيان</bdi>
+                    : 90 points
+                </li>
             </ul>
 
             <h2>&ltdatalist&gt</h2>
@@ -280,6 +289,21 @@
                 <option value="Safari">
             </datalist>
         </div>
+
+        <h2>oninput</h2>
+
+        <input type="text" id="myAge" oninput="getAgeInDays()">
+
+        <p id="demo"></p>
+
+        <h2>&ltaudio&gt</h2>
+        <audio id="myAudio" controls>
+            <source src="https://www.w3schools.com/jsref/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/jsref/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+
     </section>
     <aside>
         <p>I'm side bar</p>
