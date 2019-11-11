@@ -642,4 +642,8 @@ footer p {
   color: #e3b04b;
 }
 
+ol, ul {
+  list-style: initial;
+}
+
 /*# sourceMappingURL=main.css.map */

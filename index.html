@@ -312,23 +312,95 @@
         </video>
 
         <h1>&ltform&gt</h1>
-        <form>
+
+        <h2 class="left">Form Attributes</h2>
+        <ol class="left">
+            <li>novalidate</li>
+            <li><a href="https://www.w3schools.com/tags/att_form_enctype.asp">enctype</a></li>
+        </ol>
+
+        <h2 class="left">inputs Attributes</h2>
+        <ol class="left">
+            <li>autofocus</li>
+            <li><a href="https://www.w3schools.com/tags/att_input_form.asp">form</a></li>
+            <li><a href="https://www.w3schools.com/tags/att_input_formnovalidate.asp">formnovalidate</a></li>
+            <li><a href="https://www.w3schools.com/tags/att_input_form.asp">form</a></li>
+            <li>formtarget</li>
+            <li>placeholder</li>
+            <li>multiple (email,file)</li>
+            <li>required</li>
+            <li>min</li>
+            <li>max</li>
+            <li>step</li>
+            <li><a href="https://www.w3schools.com/tags/att_input_pattern.asp">pattern</a></li>
+            <li>disabled</li>
+            <li>readonly</li>
+        </ol>
+
+
+        <h2 class="left">Shared Attributes</h2>
+        <ol class="left">
+            <li>autocomplete="off"</li>
+        </ol>
+
+
+        <form autocomplete="off" enctype="text/plain" id="main-form">
             <h2>&ltinput type="color"&gt</h2>
             <input type="color" name="color" value="#ff0000">
+
             <h2>&ltinput type="range"&gt</h2>
             <input type="range" name="rage">
+
             <h2>&ltinput type="number"&gt</h2>
             <input type="number" name="number">
+
             <h2>&ltinput type="email"&gt</h2>
-            <input type="email" name="email">
-            <h2>&ltinput type="search"&gt</h2>
+            <input type="email"  name="email" required>
+
+
+            <h2>&ltinput type="password"&gt (pattern)</h2>
+            <input type="password" autofocus name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+
+            <h2>&ltinput type="file"&gt</h2>
+            <input type="file" autofocus name="file" multiple>
+
+            <h2>&ltinput type="search"&gt </h2>
             <input type="search" name="search">
+
             <h2>&ltinput type="url"&gt</h2>
             <input type="url" name="url">
+
             <h2>&ltinput type="tel"&gt</h2>
             <input type="tel" name="tel">
+
+            <h2>&ltinput type="time"&gt</h2>
+            <input type="time" name="time">
+
+
+            <h2>&ltinput type="date"&gt</h2>
+            <input type="date" name="date">
+
+            <h2>&ltinput type="datetime-local"&gt</h2>
+            <input type="datetime-local" name="datetime-local">
+
+            <h2>&ltinput type="month"&gt</h2>
+            <input type="month" name="month">
+
+            <h2>&ltinput type="week"&gt</h2>
+            <input type="week" name="week">
+
             <input type="submit">
+            <input type="submit" formaction="other.php" formmethod="post" formtarget="_blank" value="other">
         </form>
+
+        <input type="text" name="other" form="main-form" placeholder="This is placeholder" >
+        <input type="text" name="readonly" readonly form="main-form" value="This is readonly" placeholder="This is readonly">
+        <input type="text" name="disabled" disabled form="main-form" value="This is disabled" placeholder="This is disabled">
+    
+    <div class="row">
+        <h1><a href="https://www.w3schools.com/html/html5_canvas.asp">&ltcanvas&gt</a></h1>
+    </div>
     </section>
     <aside>
         <p>I'm side bar</p>
