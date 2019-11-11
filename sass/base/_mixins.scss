@@ -1,0 +1,7 @@
+@mixin box {
+  border: 1px solid $dark;
+  padding: 20px;
+  margin: 10px 0;
+  background: darken($dark,60);
+  color: $light;
+}

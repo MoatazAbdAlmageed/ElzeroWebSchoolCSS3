@@ -101,6 +101,31 @@ h4 {
   text-align: right;
 }
 
+/* TODO add in mixin*
+https://scotch.io/tutorials/how-to-use-sass-mixins
+/
+ */
+h1 {
+  border: 1px solid #e3b04b;
+  padding: 20px;
+  margin: 10px 0;
+  background: black;
+  color: #f8f8f8;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+h2 {
+  border: 1px solid #e3b04b;
+  padding: 20px;
+  margin: 10px 0;
+  background: black;
+  color: #f8f8f8;
+  padding: 10px;
+  margin: 5px 0;
+  background: #553d0d;
+}
+
 .container {
   width: 100%;
 }
@@ -623,22 +648,6 @@ aside {
 img {
   padding: 3px;
   border: 1px solid #e3b04b;
-}
-
-h1 {
-  border: 1px solid #e3b04b;
-  padding: 20px;
-  margin: 10px 0;
-  background: black;
-  color: #e3b04b;
-}
-
-h2 {
-  border: 1px solid #e3b04b;
-  padding: 10px;
-  margin: 5px 0;
-  background: #553d0d;
-  color: #e3b04b;
 }
 
 footer {
