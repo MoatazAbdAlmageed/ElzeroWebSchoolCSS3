@@ -98,12 +98,19 @@ aside{
    padding: 3px;
    border: 1px solid $dark;
  }
- .description{
+ h1{
    border: 1px solid $dark;
-   width: 80%;
    padding: 20px;
    margin: 10px 0;
-   background: darken($dark,50);
+   background: darken($dark,60);
+   color: $dark;
+ }
+
+ h2{
+   border: 1px solid $dark;
+   padding: 10px;
+   margin: 5px 0;
+   background: darken($dark,40);
    color: $dark;
  }
 
@@ -114,6 +121,6 @@ aside{
      color: $dark;
    }
  }
-ol, ul {
-   list-style: initial;
- }
+.decimal {
+    list-style: decimal;
+}

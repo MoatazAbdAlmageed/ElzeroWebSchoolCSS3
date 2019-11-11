@@ -625,12 +625,19 @@ img {
   border: 1px solid #e3b04b;
 }
 
-.description {
+h1 {
   border: 1px solid #e3b04b;
-  width: 80%;
   padding: 20px;
   margin: 10px 0;
-  background: #291d06;
+  background: black;
+  color: #e3b04b;
+}
+
+h2 {
+  border: 1px solid #e3b04b;
+  padding: 10px;
+  margin: 5px 0;
+  background: #553d0d;
   color: #e3b04b;
 }
 
@@ -642,8 +649,8 @@ footer p {
   color: #e3b04b;
 }
 
-ol, ul {
-  list-style: initial;
+.decimal {
+  list-style: decimal;
 }
 
 /*# sourceMappingURL=main.css.map */
