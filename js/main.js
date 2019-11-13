@@ -42,25 +42,27 @@ function dumpData(e) {
 
 
     /* canvas */
+    var primaryColor = '#e3b04b';
+    var secondaryColor = '#333';
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
-    ctx.fillStyle = '#333';
+    ctx.fillStyle = primaryColor;
     // ctx.fillRect(0,0,50,100);
     // ctx.fillStyle = 'green';
     ctx.fillRect(0,0,canvas.width,canvas.height);
-    ctx.strokeStyle = '#333';
+    ctx.strokeStyle = primaryColor;
     ctx.lineWidth = 5;
     ctx.strokeRect(0, 0, canvas.width,canvas.height);
 
     /* Circle */
     ctx.beginPath();
     ctx.arc(150, 150, 50, 0, 2 * Math.PI);
-    ctx.fillStyle = '#eee';
+    ctx.fillStyle = secondaryColor;
     ctx.fill();
     ctx.lineWidth = 3;
     ctx.stroke();
 
-    ctx.strokeStyle = '#eee';
+    ctx.strokeStyle = secondaryColor;
 
     /* Top left */
     ctx.moveTo(10, 10);
@@ -77,11 +79,17 @@ function dumpData(e) {
 
     /* Bottom right */
     ctx.moveTo(290, 290);
-    ctx.lineTo(170, 195);
+    ctx.lineTo(160, 180);
 
 
     ctx.stroke();
     // ctx.clearRect(0, 280,canvas.width,30);
     // ctx.clearRect(0, 0,canvas.width,30);
+
+    /* Add text */
+    ctx.font = "30px Arial";
+    ctx.fillText("Moataz", 105, 80);
+    ctx.font = "60px Arial";
+    ctx.fillText("2019", 85, 280);
 
 })(jQuery);
