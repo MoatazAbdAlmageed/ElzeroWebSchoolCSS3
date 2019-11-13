@@ -662,4 +662,8 @@ footer p {
   list-style: decimal;
 }
 
+canvas {
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */

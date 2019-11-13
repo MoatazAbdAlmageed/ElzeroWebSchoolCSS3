@@ -40,4 +40,48 @@ function dumpData(e) {
         }
     });
 
+
+    /* canvas */
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#333';
+    // ctx.fillRect(0,0,50,100);
+    // ctx.fillStyle = 'green';
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.strokeStyle = '#333';
+    ctx.lineWidth = 5;
+    ctx.strokeRect(0, 0, canvas.width,canvas.height);
+
+    /* Circle */
+    ctx.beginPath();
+    ctx.arc(150, 150, 50, 0, 2 * Math.PI);
+    ctx.fillStyle = '#eee';
+    ctx.fill();
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    ctx.strokeStyle = '#eee';
+
+    /* Top left */
+    ctx.moveTo(10, 10);
+    ctx.lineTo(120, 110);
+
+    /* Top Right */
+    ctx.moveTo(290, 10);
+    ctx.lineTo(180, 110);
+
+
+    /* Bottom left */
+    ctx.moveTo(10, 290);
+    ctx.lineTo(120, 190);
+
+    /* Bottom right */
+    ctx.moveTo(290, 290);
+    ctx.lineTo(170, 195);
+
+
+    ctx.stroke();
+    // ctx.clearRect(0, 280,canvas.width,30);
+    // ctx.clearRect(0, 0,canvas.width,30);
+
 })(jQuery);
