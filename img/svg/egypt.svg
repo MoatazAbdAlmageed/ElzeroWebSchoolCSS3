@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="egypt">
-    <rect x="0" y="0" width="400" height="50" fill="#fff"></rect>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="400" height="50"></rect>
     <rect x="0" y="0" width="400" height="50" fill="red"></rect>
     <rect x="0" y="100" width="400" height="50" fill="#000"></rect>
 </svg>

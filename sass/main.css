@@ -666,4 +666,20 @@ canvas {
   display: block;
 }
 
+#egypt .first {
+  fill: #ff0000;
+}
+#egypt .first:hover {
+  fill: green;
+}
+#egypt .second {
+  fill: #FFFFFF;
+}
+#egypt .third {
+  fill: #000000;
+}
+#egypt .third:hover {
+  fill: green;
+}
+
 /*# sourceMappingURL=main.css.map */
