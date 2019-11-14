@@ -1,6 +1,6 @@
 // Reset
 @import 'base/reset';
-@import '../node_modules/reset-css/sass/reset';
+//@import '../node_modules/reset-css/sass/reset';
 // Base
 @import 'base/variables';
 @import 'base/mixins';
@@ -68,9 +68,9 @@ colgroup {
 
 .brand * {
   padding: 0;
-  margin: 0;
   font-size: 25px;
   color: $dark;
+  margin: 22px 0;
 }
 
 article {
@@ -83,12 +83,20 @@ article {
 }
 
 .post {
-  width: 80%;
   float: left;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+  color: $light;
+  }
 }
-
+.intro h1{
+  color: $light;
+}
 aside {
-  width: 20%;
   float: right;
 }
 
@@ -145,4 +153,9 @@ canvas {
   }
 
 
+}
+a{
+  &:hover{
+    text-decoration: none !important;
+  }
 }

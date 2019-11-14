@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+    <rect x="0" y="0" width="100%" height="100%" fill="green" rx="10" ry="10"></rect>
+    <line x1="10" y1="0"  x2="10" y2="200" stroke="#fff" stroke-width="5"></line>
+    <line x1="20" y1="0"  x2="20" y2="200" stroke="#fff" stroke-width="5"></line>
+    Your browser does not support SVG
+</svg>

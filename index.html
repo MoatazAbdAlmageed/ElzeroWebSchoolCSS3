@@ -10,61 +10,62 @@
     <script src="node_modules/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-3.1.1.min.css">
 </head>
 
 <body>
-<header>
-    <section class="navigation">
-        <div class="nav-container">
-            <div class="brand">
-                <a href="#"><h4>MoatazWorld</h4></a>
-            </div>
-            <nav>
-                <div class="nav-mobile">
-                    <a id="nav-toggle" href="#!"><span></span></a>
+<div class="container-fluid">
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="#"><h4>MoatazWorld</h4></a>
                 </div>
-                <ul class="nav-list">
-                    <li>
-                        <a href="#!">Home</a>
-                    </li>
-                    <li>
-                        <a href="#!">About</a>
-                    </li>
-                    <li>
-                        <a href="#!">Services</a>
-                        <ul class="nav-dropdown">
-                            <li>
-                                <a href="#!">Web Design</a>
-                            </li>
-                            <li>
-                                <a href="#!">Web Development</a>
-                            </li>
-                            <li>
-                                <a href="#!">Graphic Design</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#!">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#!">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+                <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!"><span></span></a>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">About</a>
+                        </li>
+                        <li>
+                            <a href="#!">Services</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#!">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Web Development</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Graphic Design</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="row intro">
+            <h1>HTML5 & CSS3</h1>
+            <p>Learn by doing</p>
         </div>
-    </section>
-</header>
-<main>
-    <div class="row">
-        <h1>HTML5 & CSS3</h1>
-        <p>Learn by doing</p>
-    </div>
-
-    <section class="post">
+<div class="row">
+    <section class="post col-sm-10">
 
         <div class="row">
-            <h2>CSS3</h2>
             <div class="col">
                 <div class="intro-box radius1 shadow">
                     <h2>BOX 1</h2>
@@ -397,31 +398,34 @@
         <input type="text" name="other" form="main-form" placeholder="This is placeholder" >
         <input type="text" name="readonly" readonly form="main-form" value="This is readonly" placeholder="This is readonly">
         <input type="text" name="disabled" disabled form="main-form" value="This is disabled" placeholder="This is disabled">
-    
-    <div class="row">
-        <h1><a href="https://www.w3schools.com/html/html5_canvas.asp">&ltcanvas&gt</a></h1>
-        <ul>
-            <li><a href="https://www.html5canvastutorials.com/">https://www.html5canvastutorials.com/</a></li>
-        </ul>
 
-        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
-            Your browser does not support the HTML5 canvas tag.
-        </canvas>
+        <div class="row">
+            <h1><a href="https://www.w3schools.com/html/html5_canvas.asp">&ltcanvas&gt</a></h1>
+            <ul>
+                <li><a href="https://www.html5canvastutorials.com/">https://www.html5canvastutorials.com/</a></li>
+            </ul>
 
-        <canvas id="canvas" width="300" height="300">
-            Your browser does not support the HTML5 canvas tag.
-        </canvas>
-        
-        <h2>&ltSVG&gt</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" id="egypt">
-            <rect class="first" x="0" y="0" width="400" height="50"></rect>
-            <rect class="second" x="0" y="100" width="400" height="50"></rect>
-            <rect class="third" x="0" y="100" width="400" height="50"></rect>
-        </svg>
-        <img src="img/svg/circle.svg" alt="circle">
-    </div>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+
+            <canvas id="canvas" width="300" height="300">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+
+            <h2>&ltSVG&gt</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" id="egypt">
+                <rect class="first" x="0" y="0" width="400" height="50"></rect>
+                <rect class="second" x="0" y="100" width="400" height="50"></rect>
+                <rect class="third" x="0" y="100" width="400" height="50"></rect>
+                Your browser does not support SVG
+            </svg>
+            <img src="img/svg/circle.svg" alt="circle">
+            <img src="img/svg/ellipse.svg" alt="ellipse">
+            <img src="img/svg/line.svg" alt="line">
+        </div>
     </section>
-    <aside>
+    <aside class="col-sm-2">
         <p>I'm side bar</p>
         <section class="box effect7 links">
             <h3>HTML</h3>
@@ -443,12 +447,12 @@
             </ul>
         </section>
     </aside>
-    <div class="clearfix"></div>
-</main>
-
-<footer>
-    <p>copyright 2019 &copy;</p>
-</footer>
+</div>
+    </main>
+    <footer>
+        <p>copyright 2019 &copy;</p>
+    </footer>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
