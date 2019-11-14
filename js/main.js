@@ -83,7 +83,6 @@ function dumpData(e) {
 
 
     ctx.stroke();
-    // ctx.clearRect(0, 280,canvas.width,30);
     // ctx.clearRect(0, 0,canvas.width,30);
 
     /* Add text */
