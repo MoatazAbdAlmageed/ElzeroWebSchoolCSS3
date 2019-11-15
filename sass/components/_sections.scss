@@ -1,7 +1,10 @@
 .box {
-  height:200px;
   background:#FFF;
   margin:40px auto;
+  ol{
+    list-style: decimal;
+    margin-left: 24px;
+  }
 }
 
 

@@ -1,6 +1,6 @@
 // Reset
 @import 'base/reset';
-@import '../css/bootstrap-3.1.1.min.css';
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //@import '../node_modules/reset-css/sass/reset';
 // Base
 @import 'base/variables';
@@ -159,4 +159,13 @@ a{
   &:hover{
     text-decoration: none !important;
   }
+}
+.course{
+  padding: 20px 0;
+  background: red;
+  font-size: 30px;
+}
+
+#courses ul{
+  list-style: initial;
 }

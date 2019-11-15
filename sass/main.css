@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import '../css/bootstrap-3.1.1.min.css';
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import url("https://fonts.googleapis.com/css?family=McLaren&display=swap");
 * {
   box-sizing: border-box;
@@ -109,9 +109,12 @@ h2 {
 }
 
 .box {
-  height: 200px;
   background: #FFF;
   margin: 40px auto;
+}
+.box ol {
+  list-style: decimal;
+  margin-left: 24px;
 }
 
 /*==================================================
@@ -638,6 +641,16 @@ canvas {
 
 a:hover {
   text-decoration: none !important;
+}
+
+.course {
+  padding: 20px 0;
+  background: red;
+  font-size: 30px;
+}
+
+#courses ul {
+  list-style: initial;
 }
 
 /*# sourceMappingURL=main.css.map */
