@@ -1,6 +1,3 @@
-.container {
-  width: 100%;
-}
 .intro-box {
   background: $dark;
   color: darken($light,80);
@@ -19,14 +16,4 @@
     cursor: crosshair;
     word-wrap: break-word; /* use this to break words like urls vs white-space normal (should have space) */
   }
-}
-.row{
-  width: 100%;
-  margin: 10px 0;
-  clear: both;
-}
-.col {
-  width: 30%;
-  float: left;
-  margin: 0 20px;
 }

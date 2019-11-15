@@ -24,11 +24,22 @@ h1 {
   @include box;
   padding: 20px;
   margin: 10px 0;
+  color: $light;
+  background: $danger;
+  border-color: darken($danger, 20);
+  a{
+    color: $light;
+    &:hover{
+      color: lighten($danger, 20);
+
+    }
+  }
 }
 
 h2 {
   @include box;
   padding: 10px;
   margin: 5px 0;
-  background: darken($dark, 40);
+  background: $warning;
+  color: darken($dark,40);
 }

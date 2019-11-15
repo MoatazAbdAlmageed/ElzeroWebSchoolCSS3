@@ -83,20 +83,10 @@ article {
   text-decoration: line-through;
 }
 
-.post {
-  float: left;
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6{
-  color: $light;
-  }
-}
-.intro h1{
+.intro h1 {
   color: $light;
 }
+
 aside {
   float: right;
 }
@@ -138,34 +128,43 @@ canvas {
 #egypt {
   .first {
     fill: #ff0000;
-    &:hover{
+
+    &:hover {
       fill: green;
     }
   }
+
   .second {
     fill: #FFFFFF;
   }
 
   .third {
     fill: #000000;
-    &:hover{
+
+    &:hover {
       fill: green;
     }
   }
 
 
 }
-a{
-  &:hover{
+
+a {
+  &:hover {
     text-decoration: none !important;
   }
 }
-.course{
-  padding: 20px 0;
-  background: $danger;
-  font-size: 30px;
-}
 
-#courses ul{
-  list-style: initial;
+aside {
+  li{
+    border: 1px solid transparent;
+    transition: all 0.25s ease 0s;
+  }
+  li:hover {
+    background: $danger;
+    border-color: darken($danger, 20);
+    a {
+      color: $light;
+    }
+  }
 }

@@ -55,9 +55,18 @@ h1 {
   padding: 20px;
   margin: 10px 0;
   background: black;
-  color: #f8f8f8;
+  color: #e3b04b;
   padding: 20px;
   margin: 10px 0;
+  color: #f8f8f8;
+  background: #da2d2d;
+  border-color: #891818;
+}
+h1 a {
+  color: #f8f8f8;
+}
+h1 a:hover {
+  color: #e98484;
 }
 
 h2 {
@@ -65,14 +74,11 @@ h2 {
   padding: 20px;
   margin: 10px 0;
   background: black;
-  color: #f8f8f8;
+  color: #e3b04b;
   padding: 10px;
   margin: 5px 0;
-  background: #553d0d;
-}
-
-.container {
-  width: 100%;
+  background: #f6da63;
+  color: #553d0d;
 }
 
 .intro-box {
@@ -94,18 +100,6 @@ h2 {
   cursor: crosshair;
   word-wrap: break-word;
   /* use this to break words like urls vs white-space normal (should have space) */
-}
-
-.row {
-  width: 100%;
-  margin: 10px 0;
-  clear: both;
-}
-
-.col {
-  width: 30%;
-  float: left;
-  margin: 0 20px;
 }
 
 .box {
@@ -571,18 +565,6 @@ article {
   text-decoration: line-through;
 }
 
-.post {
-  float: left;
-}
-.post h1,
-.post h2,
-.post h3,
-.post h4,
-.post h5,
-.post h6 {
-  color: #f8f8f8;
-}
-
 .intro h1 {
   color: #f8f8f8;
 }
@@ -643,14 +625,16 @@ a:hover {
   text-decoration: none !important;
 }
 
-.course {
-  padding: 20px 0;
-  background: #da2d2d;
-  font-size: 30px;
+aside li {
+  border: 1px solid transparent;
+  transition: all 0.25s ease 0s;
 }
-
-#courses ul {
-  list-style: initial;
+aside li:hover {
+  background: #da2d2d;
+  border-color: #891818;
+}
+aside li:hover a {
+  color: #f8f8f8;
 }
 
 /*# sourceMappingURL=main.css.map */
