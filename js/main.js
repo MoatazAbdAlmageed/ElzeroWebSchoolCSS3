@@ -1,4 +1,3 @@
-
 function getAgeInDays() {
     var myAge = document.getElementById("myAge").value;
     document.getElementById("demo").innerHTML = 365 * parseInt(myAge);
