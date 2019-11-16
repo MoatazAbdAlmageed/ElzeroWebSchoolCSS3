@@ -9,9 +9,11 @@ function dumpData(e) {
 
     for (var input of entires) {
         console.log(input[0] + ': ' + input[1]);
-    }}
+    }
+}
 
 (function($) {
+    $('#year').text(new Date().getFullYear());
     $(function() {
         $('nav ul li > a:not(:only-child)').click(function(e) {
             $(this).siblings('.nav-dropdown').toggle();

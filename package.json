@@ -27,6 +27,8 @@
     "html5shiv": "^3.7.3",
     "lite-server": "^2.5.4",
     "mini-css-extract-plugin": "^0.8.0",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6",
     "reset-css": "^5.0.1",
     "sass": "^1.23.3",
     "uglifyjs-webpack-plugin": "^2.2.0",

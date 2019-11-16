@@ -1,0 +1,38 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, decimal-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title HTML5 &amp; CSS3
+    //if lt IE 9
+      script(src='node_modules/html5shiv/dist/html5shiv.js')
+    link(rel='stylesheet' href='css/main.css')
+.container-fluid
+    header
+        section.navigation
+            .nav-container
+                .brand
+                    a(href='#')
+                        h4 MoatazWorld
+                nav
+                    .nav-mobile
+                        a#nav-toggle(href='#!')
+                            span
+                    ul.nav-list
+                        li
+                            a(href='#!') Home
+                        li
+                            a(href='#!') About
+                        li
+                            a(href='#!') Services
+                            ul.nav-dropdown
+                                li
+                                    a(href='#!') Web Design
+                                li
+                                    a(href='#!') Web Development
+                                li
+                                    a(href='#!') Graphic Design
+                        li
+                            a(href='#!') Pricing
+                        li
+                            a(href='#!') Contact

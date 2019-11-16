@@ -1,0 +1,219 @@
+.row.left
+    h1#HTML5.course Course: HTML5
+    h3
+        | Deprecated tags
+        a(href='https://www.tutorialspoint.com/html5/html5_deprecated_tags.htm')
+            | HTML5 -
+            | Deprecated Tags &amp; Attributes
+    ol#deprecated
+        li center
+        li big
+        li acronym
+        li applet
+        li dir
+        li font
+    p
+        | Using
+        a(href='https://www.npmjs.com/package/html5shiv') html5shiv
+    article
+        header
+            h2 This is header
+        h2 &amp;ltdetails&amp;gt
+        details
+            summary More details.
+            p  - by Refsnes Data. All Rights Reserved.
+            p
+                | All content and graphics on this web site are the property of the company Refsnes
+                | Data.
+        p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita impedit minima quae? Atque
+            | dolor
+            | eum iure maiores nulla suscipit vero voluptatem voluptatum. Adipisci, aut dolore
+            | necessitatibus
+            | obcaecati provident tempora voluptas!
+        //
+          Lets start with a single html5 progress element. Currently our progress bar is in the indeterminate state. Lets change the status by adding 'max' and 'value' attribute to our progress element.
+          We are almost done styling a single progress bar, except adding fallback technique for browsers that do not support progress element. The idea is to simulate the visual styles of the progress bar using `div` and `span`.
+          Note:- To imitate the older browsers and help us style the fallback technique, we wil temporarily comment-out the progress tag.
+        h2 &amp;ltprogress&amp;gt
+        ul
+            li
+                h3 Frontend
+                // HTML5
+                p(style='width:80%' data-value='80') HTML5
+                progress.html5(max='100' value='80')
+                    // Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it.
+                    .progress-bar
+                        span(style='width: 80%') 80%
+                // CSS3
+                p(style='width:60%' data-value='60') CSS3
+                progress.css3(max='100' value='60')
+                    // Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it.
+                    .progress-bar
+                        span(style='width: 60%') 60%
+                // jQuery
+                p(style='width:50%' data-value='50') jQuery
+                progress.jquery(max='100' value='50')
+                    // Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it.
+                    .progress-bar
+                        span(style='width: 50%') 50%
+            li
+                h3 Backend
+                // Python
+                p(style='width:75%' data-value='75') Python
+                progress.python(max='100' value='75')
+                    // Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it.
+                    .progress-bar
+                        span(style='width: 75%') 75%
+                // PHP
+                p(style='width:65%' data-value='65') PHP
+                progress.php(max='100' value='65')
+                    // Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it.
+                    .progress-bar
+                        span(style='width: 65%') 65%
+                // Node.js
+                p(style='width:35%' data-value='35') Node.js
+                progress.node-js(max='100' value='35')
+                    // Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it.
+                    .progress-bar
+                        span(style='width: 35%') 35%
+                h2 &amp;ltmeter&amp;gt
+                meter(style='display: block;height: 200px; width: 100%' max='1.0' min='0.0' value='0.24' low='.25' optimum='0.5')
+        p
+            | Article -
+            a(href='https://css-tricks.com/html5-progress-element/') https://css-tricks.com/html5-progress-element/
+    h2 &amp;ltfigure&amp;gt
+    figure
+        img(src='img/640x480.jpeg' alt='The Pulpit Rock' width='304' height='228')
+        figcaption Fig.1 - Trulli, Puglia, Italy.
+    h2 &amp;lttime&amp;gt
+    p
+        | We open at
+        time 10:00
+        |                         every morning.
+    p
+        | I have a date on
+        time(datetime='2008-02-14 20:00') Valentines day
+    h2 &amp;ltdialog&amp;gt
+    dialog(open='') This is an open dialog window
+    h2 &amp;ltbdi&amp;gt
+    p.description Isolate the usernames from the surrounding text-direction settings:
+    ul
+        li
+            | User
+            bdi hrefs
+            |                             : 60 points
+        li
+            | User
+            bdi jdoe
+            |                             : 80 points
+        li
+            | User
+            bdi &#x625;&#x64A;&#x627;&#x646;
+            |                             : 90 points
+    h2 &amp;ltdatalist&amp;gt
+    input(list='browsers')
+    datalist#browsers
+        option(value='Internet Explorer')
+        option(value='Firefox')
+        option(value='Chrome')
+        option(value='Opera')
+        option(value='Safari')
+h2 oninput
+input#myAge(type='text' oninput='getAgeInDays()')
+p#demo
+h2 &amp;ltaudio&amp;gt
+audio#myAudio(controls='' preload='none')
+    source(src='https://www.w3schools.com/jsref/horse.ogg' type='audio/ogg')
+    source(src='https://www.w3schools.com/jsref/horse.mp3' type='audio/mpeg')
+    |                     Your browser does not support the audio element.
+h2 &amp;ltvideo&amp;gt
+video#myVideo(width='320' height='240' controls='' preload='none')
+    source(src='https://www.w3schools.com/jsref/movie.mp4' type='video/mp4')
+    source(src='https://www.w3schools.com/jsref/movie.ogg' type='video/ogg')
+    |                     Your browser does not support the video tag.
+h1 &amp;ltform&amp;gt
+h2.left Form Attributes
+ol.left.decimal
+    li novalidate
+    li
+        a(href='https://www.w3schools.com/tags/att_form_enctype.asp') enctype
+h2.left inputs Attributes
+ol.left.decimal
+    li autofocus
+    li
+        a(href='https://www.w3schools.com/tags/att_input_form.asp') form
+    li
+        a(href='https://www.w3schools.com/tags/att_input_formnovalidate.asp') formnovalidate
+    li
+        a(href='https://www.w3schools.com/tags/att_input_form.asp') form
+    li formtarget
+    li placeholder
+    li multiple (email,file)
+    li required
+    li min
+    li max
+    li step
+    li
+        a(href='https://www.w3schools.com/tags/att_input_pattern.asp') pattern
+    li disabled
+    li readonly
+h2.left Shared Attributes
+ol.left.decimal
+    li autocomplete=&quot;off&quot;
+form#main-form(autocomplete='off' enctype='text/plain')
+    h2 &amp;ltinput type=&quot;color&quot;&amp;gt
+    input(type='color' name='color' value='#ff0000')
+    h2 &amp;ltinput type=&quot;range&quot;&amp;gt
+    input(type='range' name='rage')
+    h2 &amp;ltinput type=&quot;number&quot;&amp;gt
+    input(type='number' name='number')
+    h2 &amp;ltinput type=&quot;email&quot;&amp;gt
+    input(type='email' name='email' required='')
+    h2 &amp;ltinput type=&quot;password&quot;&amp;gt (pattern)
+    input(type='password' autofocus='' name='password' required='' pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}')
+    h2 &amp;ltinput type=&quot;file&quot;&amp;gt
+    input(type='file' autofocus='' name='file' multiple='')
+    h2 &amp;ltinput type=&quot;search&quot;&amp;gt
+    input(type='search' name='search')
+    h2 &amp;ltinput type=&quot;url&quot;&amp;gt
+    input(type='url' name='url')
+    h2 &amp;ltinput type=&quot;tel&quot;&amp;gt
+    input(type='tel' name='tel')
+    h2 &amp;ltinput type=&quot;time&quot;&amp;gt
+    input(type='time' name='time')
+    h2 &amp;ltinput type=&quot;date&quot;&amp;gt
+    input(type='date' name='date')
+    h2 &amp;ltinput type=&quot;datetime-local&quot;&amp;gt
+    input(type='datetime-local' name='datetime-local')
+    h2 &amp;ltinput type=&quot;month&quot;&amp;gt
+    input(type='month' name='month')
+    h2 &amp;ltinput type=&quot;week&quot;&amp;gt
+    input(type='week' name='week')
+    input(type='submit')
+    input(type='submit' formaction='other.php' formmethod='post' formtarget='_blank' value='other submit')
+input(type='text' name='other' form='main-form' placeholder='This is placeholder')
+input(type='text' name='readonly' readonly='' form='main-form' value='This is readonly' placeholder='This is readonly')
+input(type='text' name='disabled' disabled='' form='main-form' value='This is disabled' placeholder='This is disabled')
+.row
+    h1
+        a(href='https://www.w3schools.com/html/html5_canvas.asp') &amp;ltcanvas&amp;gt
+    ul
+        li
+            a(href='https://www.html5canvastutorials.com/') https://www.html5canvastutorials.com/
+    canvas#myCanvas(width='200' height='100' style='border:1px solid #000000;')
+        | Your browser does not support the HTML5 canvas tag.
+    canvas#canvas(width='300' height='300')
+        | Your browser does not support the HTML5 canvas tag.
+    h2 &amp;ltSVG&amp;gt
+    .row
+        .col-md-6
+            svg#egypt(xmlns='http://www.w3.org/2000/svg')
+                rect.first(x='0' y='0' width='400' height='50')
+                rect.second(x='0' y='100' width='400' height='50')
+                rect.third(x='0' y='100' width='400' height='50')
+                |                                 Your browser does not support SVG
+        .col-md-6
+            img(src='img/svg/circle.svg' alt='circle')
+            img(src='img/svg/ellipse.svg' alt='ellipse')
+            img(src='img/svg/line.svg' alt='line')
