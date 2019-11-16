@@ -4,7 +4,7 @@
         | Deprecated tags
         a(href='https://www.tutorialspoint.com/html5/html5_deprecated_tags.htm')
             | HTML5 -
-            | Deprecated Tags &amp; Attributes
+            | Deprecated Tags & Attributes
     ol#deprecated
         li center
         li big
@@ -18,7 +18,7 @@
     article
         header
             h2 This is header
-        h2 &amp;ltdetails&amp;gt
+        h2 &ltdetails&gt
         details
             summary More details.
             p  - by Refsnes Data. All Rights Reserved.
@@ -35,7 +35,7 @@
           Lets start with a single html5 progress element. Currently our progress bar is in the indeterminate state. Lets change the status by adding 'max' and 'value' attribute to our progress element.
           We are almost done styling a single progress bar, except adding fallback technique for browsers that do not support progress element. The idea is to simulate the visual styles of the progress bar using `div` and `span`.
           Note:- To imitate the older browsers and help us style the fallback technique, we wil temporarily comment-out the progress tag.
-        h2 &amp;ltprogress&amp;gt
+        h2 &ltprogress&gt
         ul
             li
                 h3 Frontend
@@ -77,16 +77,16 @@
                     // Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it.
                     .progress-bar
                         span(style='width: 35%') 35%
-                h2 &amp;ltmeter&amp;gt
+                h2 &ltmeter&gt
                 meter(style='display: block;height: 200px; width: 100%' max='1.0' min='0.0' value='0.24' low='.25' optimum='0.5')
         p
             | Article -
             a(href='https://css-tricks.com/html5-progress-element/') https://css-tricks.com/html5-progress-element/
-    h2 &amp;ltfigure&amp;gt
+    h2 &ltfigure&gt
     figure
         img(src='img/640x480.jpeg' alt='The Pulpit Rock' width='304' height='228')
         figcaption Fig.1 - Trulli, Puglia, Italy.
-    h2 &amp;lttime&amp;gt
+    h2 &lttime&gt
     p
         | We open at
         time 10:00
@@ -94,9 +94,9 @@
     p
         | I have a date on
         time(datetime='2008-02-14 20:00') Valentines day
-    h2 &amp;ltdialog&amp;gt
+    h2 &ltdialog&gt
     dialog(open='') This is an open dialog window
-    h2 &amp;ltbdi&amp;gt
+    h2 &ltbdi&gt
     p.description Isolate the usernames from the surrounding text-direction settings:
     ul
         li
@@ -111,7 +111,7 @@
             | User
             bdi &#x625;&#x64A;&#x627;&#x646;
             |                             : 90 points
-    h2 &amp;ltdatalist&amp;gt
+    h2 &ltdatalist&gt
     input(list='browsers')
     datalist#browsers
         option(value='Internet Explorer')
@@ -122,17 +122,17 @@
 h2 oninput
 input#myAge(type='text' oninput='getAgeInDays()')
 p#demo
-h2 &amp;ltaudio&amp;gt
+h2 &ltaudio&gt
 audio#myAudio(controls='' preload='none')
     source(src='https://www.w3schools.com/jsref/horse.ogg' type='audio/ogg')
     source(src='https://www.w3schools.com/jsref/horse.mp3' type='audio/mpeg')
     |                     Your browser does not support the audio element.
-h2 &amp;ltvideo&amp;gt
+h2 &ltvideo&gt
 video#myVideo(width='320' height='240' controls='' preload='none')
     source(src='https://www.w3schools.com/jsref/movie.mp4' type='video/mp4')
     source(src='https://www.w3schools.com/jsref/movie.ogg' type='video/ogg')
     |                     Your browser does not support the video tag.
-h1 &amp;ltform&amp;gt
+h1 &ltform&gt
 h2.left Form Attributes
 ol.left.decimal
     li novalidate
@@ -162,33 +162,33 @@ h2.left Shared Attributes
 ol.left.decimal
     li autocomplete=&quot;off&quot;
 form#main-form(autocomplete='off' enctype='text/plain')
-    h2 &amp;ltinput type=&quot;color&quot;&amp;gt
+    h2 &ltinput type=&quot;color&quot;&gt
     input(type='color' name='color' value='#ff0000')
-    h2 &amp;ltinput type=&quot;range&quot;&amp;gt
+    h2 &ltinput type=&quot;range&quot;&gt
     input(type='range' name='rage')
-    h2 &amp;ltinput type=&quot;number&quot;&amp;gt
+    h2 &ltinput type=&quot;number&quot;&gt
     input(type='number' name='number')
-    h2 &amp;ltinput type=&quot;email&quot;&amp;gt
+    h2 &ltinput type=&quot;email&quot;&gt
     input(type='email' name='email' required='')
-    h2 &amp;ltinput type=&quot;password&quot;&amp;gt (pattern)
+    h2 &ltinput type=&quot;password&quot;&gt (pattern)
     input(type='password' autofocus='' name='password' required='' pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}')
-    h2 &amp;ltinput type=&quot;file&quot;&amp;gt
+    h2 &ltinput type=&quot;file&quot;&gt
     input(type='file' autofocus='' name='file' multiple='')
-    h2 &amp;ltinput type=&quot;search&quot;&amp;gt
+    h2 &ltinput type=&quot;search&quot;&gt
     input(type='search' name='search')
-    h2 &amp;ltinput type=&quot;url&quot;&amp;gt
+    h2 &ltinput type=&quot;url&quot;&gt
     input(type='url' name='url')
-    h2 &amp;ltinput type=&quot;tel&quot;&amp;gt
+    h2 &ltinput type=&quot;tel&quot;&gt
     input(type='tel' name='tel')
-    h2 &amp;ltinput type=&quot;time&quot;&amp;gt
+    h2 &ltinput type=&quot;time&quot;&gt
     input(type='time' name='time')
-    h2 &amp;ltinput type=&quot;date&quot;&amp;gt
+    h2 &ltinput type=&quot;date&quot;&gt
     input(type='date' name='date')
-    h2 &amp;ltinput type=&quot;datetime-local&quot;&amp;gt
+    h2 &ltinput type=&quot;datetime-local&quot;&gt
     input(type='datetime-local' name='datetime-local')
-    h2 &amp;ltinput type=&quot;month&quot;&amp;gt
+    h2 &ltinput type=&quot;month&quot;&gt
     input(type='month' name='month')
-    h2 &amp;ltinput type=&quot;week&quot;&amp;gt
+    h2 &ltinput type=&quot;week&quot;&gt
     input(type='week' name='week')
     input(type='submit')
     input(type='submit' formaction='other.php' formmethod='post' formtarget='_blank' value='other submit')
@@ -197,7 +197,7 @@ input(type='text' name='readonly' readonly='' form='main-form' value='This is re
 input(type='text' name='disabled' disabled='' form='main-form' value='This is disabled' placeholder='This is disabled')
 .row
     h1
-        a(href='https://www.w3schools.com/html/html5_canvas.asp') &amp;ltcanvas&amp;gt
+        a(href='https://www.w3schools.com/html/html5_canvas.asp') &ltcanvas&gt
     ul
         li
             a(href='https://www.html5canvastutorials.com/') https://www.html5canvastutorials.com/
@@ -205,7 +205,7 @@ input(type='text' name='disabled' disabled='' form='main-form' value='This is di
         | Your browser does not support the HTML5 canvas tag.
     canvas#canvas(width='300' height='300')
         | Your browser does not support the HTML5 canvas tag.
-    h2 &amp;ltSVG&amp;gt
+    h2 &ltSVG&gt
     .row
         .col-md-6
             svg#egypt(xmlns='http://www.w3.org/2000/svg')
